@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Main from './layouts/Main'
 import ProductList from './pages/ProductList'
 import ProductInfo from './pages/ProductInfo'
+import AddProduct from './pages/AddProduct'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
             <Route path='/products' element={<ProductList/>}/>
             {/* :id - products/1과 같다 */}
             <Route path='/products/:id' element={<ProductInfo/>}/>
+            <Route path='/add-product' element={<AddProduct/>}/>
           </Routes>
         </BrowserRouter>  
       </div> 
