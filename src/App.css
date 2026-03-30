@@ -9,7 +9,28 @@
   text-decoration: unset;
   margin: 0 16px;
 }
+.header-user{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: skyblue;
+   margin-left: 10px;
+}
+.logout-btn{
+  padding: 6px 12px;
+  border: 1px solid white;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+}
+.logout-btn:hover{
+  background-color: skyblue;
+  color: #333;
+  border: 1px solid skyblue;
+}
 
+/*메인*/
 .main{
   padding: 20px;
   text-align: center;
