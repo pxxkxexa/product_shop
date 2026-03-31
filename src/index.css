@@ -1,0 +1,21 @@
+/* index.css 공통 스타일 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2{
+    margin: 20px;
+    text-align: center;
+}

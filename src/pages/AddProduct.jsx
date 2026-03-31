@@ -47,15 +47,25 @@ const AddProduct = () => {
 
         console.log("상품 추가:", formData);
     }
+
+    const handleCancel = () => {
+        //navigate('/products')
+        // 폼 초기화
+        setFormData({
+            name: '',
+            price: '',
+            description: '',
+        })
+    }
     
 
     return(
         <>
         <section className="add-product">
             <h2>상품 등록</h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="add-form">
                 <div>
-                    <label htmlFor="name">상품명:</label>
+                    <label htmlFor="name">상품명</label>
                     <input 
                         type="text"
                         placeholder="상품명을 입력하세요"
@@ -65,7 +75,7 @@ const AddProduct = () => {
                     />
                 </div>
                 <div>
-                    <label htmlFor="price">가격:</label>
+                    <label htmlFor="price">가격</label>
                     <input 
                         type="number"
                         placeholder="가격을 입력하세요"
@@ -76,7 +86,7 @@ const AddProduct = () => {
                     />
                 </div>
                 <div>
-                    <label htmlFor="description">설명:</label>
+                    <label htmlFor="description">설명</label>
                     <textarea 
                         placeholder="상품 설명을 입력하세요"
                         rows={5}
@@ -88,7 +98,7 @@ const AddProduct = () => {
                 </div>
                 <div>
                     <button type="submit">등록</button>
-                    <button type="button">취소</button>
+                    <button type="button" onClick={handleCancel}>취소</button>
                 </div>
             </form>
         </section>
