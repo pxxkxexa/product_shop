@@ -6,7 +6,7 @@ const ProductList = () => {
     return(
         <>
             <section className="product-list">
-                <h2>상품목록</h2>
+                <h2>상품 목록</h2>
                 <table className="table-list">
                     <thead>
                         <tr>
